@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Sobre Andreia | Portfólio Profissional</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header>
+<nav>
+
+<h1>CloudBridge PJ</h1>
+
+<ul>
+<li><a href="index.html">Início</a></li>
+<li><a href="sobre.html">Sobre Andreia</a></li>
+<li><a href="#contato">Contato</a></li>
+</ul>
+
+</nav>
+</header>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<span class="tag">Apresentação Profissional</span>
+
+<h2>Andreia</h2>
+
+<p style="font-size:24px; font-weight:600; margin-bottom:18px;">
+Projetos, Tecnologia e Resultados
+</p>
+
+<p>
+Profissional em desenvolvimento na área de Tecnologia da Informação, com atuação voltada a soluções digitais, melhoria de processos e projetos estratégicos com foco em eficiência e inovação.
+</p>
+
+<button onclick="scrollSobre()">Conhecer Perfil</button>
+
+</div>
+
+</section>
+
+<section class="section" id="sobre">
+
+<h3>Perfil Profissional</h3>
+
+<p class="about">
+Sou Andreia, 24 anos, profissional em desenvolvimento na área de Tecnologia da Informação, com interesse em inovação, soluções digitais e melhoria contínua.
+
+Atualmente participo de projetos que conectam tecnologia às necessidades reais de negócios, sempre buscando unir funcionalidade, organização e uma boa experiência para o usuário.
+
+Entre os principais trabalhos desenvolvidos, destaco o projeto CloudBridge PJ, criado com o objetivo de conectar microempresas a parceiros especializados em backup e armazenamento em nuvem, oferecendo alternativas acessíveis para proteção de dados e modernização digital.
+
+Também desenvolvi dashboards gerenciais voltados ao acompanhamento de indicadores comerciais, como empresas prospectadas, negociações concluídas, valores gerados e receita recorrente.
+
+Busco constante evolução profissional, ampliando conhecimentos técnicos e contribuindo com soluções que gerem impacto positivo e resultados consistentes.
+</p>
+
+</section>
+
+<section class="section dark">
+
+<h3>Competências</h3>
+
+<div class="grid">
+
+<div class="card">
+<h4>Tecnologia</h4>
+<p>Desenvolvimento de soluções digitais e projetos web.</p>
+</div>
+
+<div class="card">
+<h4>Organização</h4>
+<p>Estruturação de processos e melhoria operacional.</p>
+</div>
+
+<div class="card">
+<h4>Análise</h4>
+<p>Criação de dashboards e acompanhamento de indicadores.</p>
+</div>
+
+<div class="card">
+<h4>Visão Estratégica</h4>
+<p>Foco em resultados, inovação e crescimento contínuo.</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h3>Projetos em Destaque</h3>
+
+<div class="grid">
+
+<div class="card">
+<h4>CloudBridge PJ</h4>
+<p>
+Plataforma criada para aproximar microempresas de soluções modernas em nuvem, com foco em segurança de dados e praticidade.
+</p>
+</div>
+
+<div class="card">
+<h4>Dashboard Comercial</h4>
+<p>
+Painel gerencial desenvolvido para acompanhamento de métricas comerciais e apoio à tomada de decisão.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="section dark">
+
+<h3>Dashboard Comercial</h3>
+
+
+<div class="grid" id="kpis"></div>
+
+
+<div style="margin:30px 0; text-align:center;">
+<select id="filtroStatus">
+<option value="todos">Todas</option>
+<option value="fechado">Fechado</option>
+<option value="negociacao">Negociação</option>
+<option value="contato">Contato Inicial</option>
+</select>
+</div>
+
+<div style="max-width:500px; margin:40px auto;">
+<canvas id="graficoStatus"></canvas>
+</div>
+
+<!-- Tabela -->
+<table style="width:100%; border-collapse:collapse;">
+<thead>
+<tr>
+<th>Empresa</th>
+<th>Status</th>
+<th>Valor</th>
+<th>Mensalidade</th>
+</tr>
+</thead>
+
+<tbody id="tabelaEmpresas"></tbody>
+
+</table>
+
+<p class="about" style="margin-top:30px;">
+Dashboard interativo desenvolvido para acompanhamento de funil de vendas, indicadores comerciais e receita recorrente.
+</p>
+
+</section>
+
+<section class="section" id="contato">
+
+<h3>Contato Profissional</h3>
+
+<div style="text-align:center; margin-top:35px;">
+
+<div class="grid" style="max-width:900px; margin:auto;">
+
+<div class="card">
+<h4>E-mail</h4>
+<p>andreiaviack@gmail.com</p>
+</div>
+
+<div class="card">
+<h4>LinkedIn</h4>
+<p>www.linkedin.com/in/andreia-silva-35816b403</p>
+</div>
+
+<div class="card">
+<h4>Localização</h4>
+<p>São Paulo • SP</p>
+</div>
+
+</div>
+
+<br><br>
+
+<a href="https://linkedin.com/in/seuperfil" target="_blank">
+<button>Conectar no LinkedIn</button>
+</a>
+
+</div>
+
+</section>
+
+<footer>
+Andreia • Perfil Profissional • Tecnologia • Projetos • Inovação
+</footer>
+
+<script>
+function scrollSobre(){
+document.getElementById("sobre").scrollIntoView({
+behavior:"smooth"
+});
+}
+</script>
+
+<script src="script.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script src="dashboard.js"></script>
+
+</body>
+</html>
